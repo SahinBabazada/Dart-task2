@@ -76,7 +76,7 @@ main() {
                   print("uyğun ay seçin");
                   month = int.parse(stdin.readLineSync().toString());
                 }
-                orderPrice += (month == 6) ? orderPrice + 60 : orderPrice;
+                orderPrice = (month == 6) ? orderPrice + 60 : orderPrice;
 
                 print(
                     'Siz ${product["name"]} ${product["model"]} modelini ${month} ayla ${orderPrice} AZN-a aldiniz');
